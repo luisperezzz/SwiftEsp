@@ -21,7 +21,12 @@ Usando la función `type(of:peso)` podemos ver que el compilador asume que `peso
  \
 Usando la función `type(of:nombre)` podemos ver que el compilador asume que `nombre` es un `String`.
 */
-
+let nombreConTipadoInferido = "Luis"
+let nombreConTipoExplicito: String = "Luis"
+/*:
+ - note:
+ Especificar el tipo **no** afecta el **rendimiento**, puesto que el tipo se asigna en tiempo de compilación y no en ejecución.
+ */
 
 //: - - -
 //: [Siguiente ❯](@next)
