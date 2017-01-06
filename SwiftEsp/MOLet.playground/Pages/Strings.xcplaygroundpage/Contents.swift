@@ -19,14 +19,14 @@
  Interpolación en un `String`
  */
     var nombreCompleto = nombre+apellido
-    let presentacion = "Mi nombre es "+nombre+" "+apellido
+    let presentacion = "Mi nombre es \(nombre) \(apellido)"
 
 
 
 /*:
  ---
  ---
- * callout(Interpolación Otro):
+ * callout(Interpolación con otro tipo de dato):
  Interpolación en un `String` con otro tipo de dato
  
  */
