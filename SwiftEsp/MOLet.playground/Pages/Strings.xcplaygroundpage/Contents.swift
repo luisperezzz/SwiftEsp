@@ -2,15 +2,15 @@
  Encuentra todo acerca de [Swift](http://swift.org)
  \
  \
- [❮ Anterior](@previous)
+ [❮ Anterior](@previous)     [Siguiente ❯](@next)
  - - -
  ## Strings
  ### String
  */
-    var name                = "Luis"
-    let lastName: String    = "Perez"
-    let address: String?    = "Av Javier Prado"
-    let country: String     = "Perú"
+    var nombre              = "Luis"
+    let apellido: String    = "Perez"
+    let direccion: String?  = "Av Javier Prado"
+    let pais: String        = "Perú"
 
 /*:
  ---
@@ -18,8 +18,8 @@
  * callout(Interpolación Strings):
  Interpolación en un `String`
  */
-    var fullName = name+lastName
-    let presentation = "My name is "+name+" "+lastName
+    var nombreCompleto = nombre+apellido
+    let presentacion = "Mi nombre es "+nombre+" "+apellido
 
 
 
@@ -30,8 +30,8 @@
  Interpolación en un `String` con otro tipo de dato
  
  */
-    let age: Int = 25
-    let presentationWithAge = "My name is "+name+" and I'm \(25) years old"
+    let edad: Int = 25
+    let presentacionConEdad = "Mi nombre es "+nombre+" y tengo \(edad) años"
 
 
 
@@ -41,7 +41,7 @@
  * callout(Concatenación):
  Usando el `+=` se puede concatenar sobre un `String` existente
  */
-    name+=" Perez"
+    nombre += " Perez"
 
 
 
@@ -49,7 +49,7 @@
  ---
  ---
  * callout(Unicode):
- `Strings` son tratados como valores [Unicode](http://unicode.org/cldr/utility/character.jsp). Aquí se puede ver la [tabla](https://unicode-table.com/es/#control-character) ordenada.
+ Un `String` es tratado como [Unicode](http://unicode.org/cldr/utility/character.jsp). Aquí se puede ver la [tabla](https://unicode-table.com/es/#control-character) ordenada.
  */
     let uConTilde1Caracter = "Per\u{FA}" // "ú"
     let uConTilde2Caracteres = "Per\u{75}\u{301}" // "u" + "´"
@@ -81,12 +81,12 @@
  */
     import Foundation
 
-    let languageAsNSString: NSString = "Spanish"
+    let idiomaComoNSString: NSString = "Español"
 //  Un `NSString` no puede usarse en una interpolación. Se tendría que hacer un casting.
-    let presentationWithLanguage = "My name is "+name+" and I speak "+(languageAsNSString as String)
+    let presentacionConIdioma = "Mi nombre es "+nombre+" y hablo "+(idiomaComoNSString as String)
 /*:
  - note:
- `(languageAsNSString as String)` es hacer que un NSString tome forma de un String
+ `(idiomaComoNSString as String)` es hacer que un NSString tome forma de un String
  */
 //: - - -
-//: [Siguiente ❯](@next)
+//: [❮ Anterior](@previous)     [Siguiente ❯](@next)
